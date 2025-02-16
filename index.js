@@ -1,34 +1,52 @@
-// Array of song objects. Add at least 5 songs with title, artist, and genre properties.
-const songs = [
-    { title: "Hooked on a Feeling", artist: "Blue Swede", genre: "Pop" },
-    { title: "Moonage Daydream", artist: "David Bowie", genre: "Rock" },
-    { title: "I Want You Back", artist: "The Jackson 5", genre: "Pop" },
-    { title: "Spirit in the Sky", artist: "Norman Greenbaum", genre: "Rock" },
-    { title: "Cherry Bomb", artist: "The Runaways", genre: "Rock" },
-    { title: "Escape (The Piña Colada Song)", artist: "Rupert Holmes", genre: "Pop" },
-    { title: "O-O-H Child", artist: "The Five Stairsteps", genre: "R&B" },
-    { title: "Ain't No Mountain High Enough", artist: "Marvin Gaye & Tammi Terrell", genre: "R&B" },
-    { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
-    { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
-    { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
-    // Feel free to add even more songs
-];
 
+    // Expanded Array of Songs
+    const songs = [
+        { title: "2 Deep", artist: "A-Reece", genre: "Hip-Hop" },
+        { title: "Silent Ride", artist: "Westside Boogie", genre: "Hip-Hop" },
+        { title: "Save Your Tears For Another Day", artist: "Dandy The Poet", genre: "Hip-Hop"},
+        { title: "Cold", artist: "Lucy Park", genre: "R&B"},
+        { title: "Glow", artist: "Drake", genre: "Hip-Hop"},
+        { title: "Blinding Lights", artist: "The Weeknd", genre: "Pop" },
+        { title: "Nights", artist: "Frank Ocean", genre: "R&B" },
+        { title: "Sicko Mode", artist: "Travis Scott", genre: "Hip-Hop" },
+        { title: "Die For You", artist: "The Weeknd", genre: "Pop" },
+        { title: "Come Thru", artist: "Summer Walker", genre: "R&B" }
+    ];
 
-// Object containing each Guardian's preferred genre
-const guardians = {
-    "Star-Lord": "Rock",
-    "Gamora": "Pop",
-    // Add preferences for Drax, Rocket, and Groot
-};
+    // Guardians and Their Preferred Genres
+    const guardians = {
+        "Star-Lord": "Hip-Hop",
+        "Drax": "Rock",
+        "Rocket": "R&B",
+        "Groot": "Pop",
+        "Gamora": "Hip-Hop"
+        };
 
-// Function to generate playlist based on preferred genre
-function generatePlaylist(guardians, songs) {
-    // Use the map() function to create playlists for each Guardian
-    // Your code here
-}
+    // Function to Generate Playlists
+    function generatePlaylist(guardians, songs) {
+    const playlistsDiv = document.getElementById("playlists");
 
-// Call generatePlaylist and display the playlists for each Guardian
-generatePlaylist(guardians, songs);
+    Object.keys(guardians).map(guardian => {
+            const preferredGenre = guardians[guardian];
 
+    // Filter songs that match the guardian's preferred genre
+    const playlist = songs.filter(song => song.genre === preferredGenre);
 
+    // Create playlist elements dynamically
+    const guardianDiv = document.createElement("div");
+            guardianDiv.innerHTML = `<h3>${guardian}'s Playlist (${preferredGenre})</h3>`;
+
+            const songList = document.createElement("ul");
+            playlist.forEach(song => {
+                    const songItem = document.createElement("li");
+                    songItem.textContent = `${song.title} - ${song.artist}`;
+                    songList.appendChild(songItem);
+                });
+
+                guardianDiv.appendChild(songList);
+                playlistsDiv.appendChild(guardianDiv);
+            });
+        }
+
+    // Call the function to display the playlists
+    generatePlaylist(guardians, songs);
